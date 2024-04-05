@@ -1,0 +1,164 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< edu.ucr.cs.cs167.madhi002:madhi002_lab6 >---------------
+[INFO] Building madhi002_lab6 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ madhi002_lab6 ---
+[INFO] Deleting /home/cs167/workspace/madhi002_lab6/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ madhi002_lab6 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/cs167/workspace/madhi002_lab6/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ madhi002_lab6 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- scala:3.3.2:compile (default) @ madhi002_lab6 ---
+[INFO] /home/cs167/workspace/madhi002_lab6/src/main/scala:-1: info: compiling
+[INFO] /home/cs167/workspace/madhi002_lab6/target/generated-sources/annotations:-1: info: compiling
+[INFO] Compiling 2 source files to /home/cs167/workspace/madhi002_lab6/target/classes at 1708048091012
+[INFO] prepare-compile in 0 s
+[INFO] compile in 8 s
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ madhi002_lab6 ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/cs167/workspace/madhi002_lab6/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ madhi002_lab6 ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] 
+[INFO] --- scala:3.3.2:testCompile (default) @ madhi002_lab6 ---
+[INFO] /home/cs167/workspace/madhi002_lab6/src/test/scala:-1: info: compiling
+[INFO] /home/cs167/workspace/madhi002_lab6/target/generated-test-sources/test-annotations:-1: info: compiling
+[INFO] Compiling 3 source files to /home/cs167/workspace/madhi002_lab6/target/test-classes at 1708048099598
+[INFO] prepare-compile in 0 s
+[INFO] compile in 9 s
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ madhi002_lab6 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- scalatest:2.0.0:test (test) @ madhi002_lab6 ---
+Run starting. Expected test count is: 1
+JUnitWrapperSuite:
+- testOK
+Run completed in 368 milliseconds.
+Total number of tests run: 1
+Suites: completed 1, aborted 0
+Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ madhi002_lab6 ---
+[INFO] Building jar: /home/cs167/workspace/madhi002_lab6/target/madhi002_lab6-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.901 s
+[INFO] Finished at: 2024-02-16T01:48:31Z
+[INFO] ------------------------------------------------------------------------
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' is 1891709
+Command 'count-all' on file 'nasa_19950630.22-19950728.12.tsv' finished in 3.959129335 seconds
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' with response code 302 is 46573
+Command 'code-filter' on file 'nasa_19950630.22-19950728.12.tsv' finished in 4.927233463 seconds
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' in time range [804955673, 805590159] is 554919
+Command 'time-filter' on file 'nasa_19950630.22-19950728.12.tsv' finished in 4.703779092 seconds
+Using Spark master 'local[*]'
+Number of lines per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Count
+200,1701534
+302,46573
+304,132627
+403,54
+404,10845
+500,62
+501,14
+Command 'count-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 5.812933578 seconds
+Using Spark master 'local[*]'
+Total bytes per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Sum(bytes)
+200,38692291442
+302,3682049
+304,0
+403,0
+404,0
+500,0
+501,0
+Command 'sum-bytes-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 7.302365655 seconds
+Using Spark master 'local[*]'
+Average bytes per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Avg(bytes)
+200,22739.652244386536
+302,79.0597341807485
+304,0.0
+403,0.0
+404,0.0
+500,0.0
+501,0.0
+Command 'avg-bytes-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 16.608317933000002 seconds
+Using Spark master 'local[*]'
+Top host in the file 'nasa_19950630.22-19950728.12.tsv' by number of entries
+Host: piweba3y.prodigy.com
+Number of entries: 17572
+Command 'top-host' on file 'nasa_19950630.22-19950728.12.tsv' finished in 8.723881206 seconds
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' is 1891709
+Command 'count-all' on file 'nasa_19950630.22-19950728.12.tsv' finished in 3.270237469 seconds
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' with response code 302 is 46573
+Command 'code-filter' on file 'nasa_19950630.22-19950728.12.tsv' finished in 4.931908057 seconds
+Using Spark master 'local[*]'
+Total count for file 'nasa_19950630.22-19950728.12.tsv' in time range [804955673, 805590159] is 554919
+Command 'time-filter' on file 'nasa_19950630.22-19950728.12.tsv' finished in 5.039292743000001 seconds
+Using Spark master 'local[*]'
+Number of lines per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Count
+200,1701534
+302,46573
+304,132627
+403,54
+404,10845
+500,62
+501,14
+Command 'count-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 11.142234 seconds
+Using Spark master 'local[*]'
+Total bytes per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Sum(bytes)
+200,38692291442
+302,3682049
+304,0
+403,0
+404,0
+500,0
+501,0
+Command 'sum-bytes-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 9.734020001000001 seconds
+Using Spark master 'local[*]'
+Average bytes per code for the file 'nasa_19950630.22-19950728.12.tsv'
+Code,Avg(bytes)
+200,22739.652244386536
+302,79.0597341807485
+304,0.0
+403,0.0
+404,0.0
+500,0.0
+501,0.0
+Command 'avg-bytes-by-code' on file 'nasa_19950630.22-19950728.12.tsv' finished in 13.106990132 seconds
+Using Spark master 'local[*]'
+Top host in the file 'nasa_19950630.22-19950728.12.tsv' by number of entries
+Host: piweba3y.prodigy.com
+Number of entries: 17572
+Command 'top-host' on file 'nasa_19950630.22-19950728.12.tsv' finished in 10.138744897 seconds
+Using Spark master 'local[*]'
+Comparison of the number of lines per code before and after 805383872 on file 'nasa_19950630.22-19950728.12.tsv'
+Code,CountBefore,CountAfter
+200,594412,1107122
+302,21057,25516
+304,38000,94627
+403,19,35
+404,3864,6981
+500,53,9
+501,2,12
+Command 'comparison' on file 'nasa_19950630.22-19950728.12.tsv' finished in 12.947840867 seconds
